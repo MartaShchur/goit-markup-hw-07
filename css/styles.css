@@ -50,19 +50,46 @@ p{
 
 .location {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap:72px 24px;
 }
 
 .container{
-    width: 1158px;
-    padding: 0 15px 0 15px;
+    /* Basic styles */
+    min-width:320px;
+    max-width: 396px;
+    padding: 0 16px;
     margin: 0 auto;
 }
 
-.section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* Tablet screen >= 768  */
+@media only screen and (min-width: 768px){
+    .container {
+        max-width: 736px;
+    }   
 }
+    
+    /* Desktop screen >= 1158  */
+@media only screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+}
+
+
+.section{
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+         
+@media only screen and (min-width: 1158px) {
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
 
 /**
   |============================
@@ -248,39 +275,72 @@ p{
 */
 
 .location-feature{
-    width: calc((100% - 72px) / 4);  
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    padding: 0px;
+    width: 396px;
+}
+    
+@media only screen and (min-width: 768px) {
+    .location-feature {
+        width: 356px;
+    }
 }
 
+@media only screen and (min-width: 1158) {
+    .location-feature {
+        width: 264px;
+    }
+}
+
+
+
 .features-title{
-    font-weight:500;
-    font-size:20px;
-    line-height:1.2;
-    color:var(--main-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--main-text-color);
     margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 1158) {
+    .features-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    
 }
 
 .features-text{
-    font-weight: 400;
-    font-size:16px;
-    line-height:1.5;
-    color:var(--secondary-text-color);
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 0.6;
+        color: var(--main-text-color);
+        margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 1158) {
+    .features-text {
+        font-weight: 400;
+        line-height: 1.5;
+    }
 }
 
 .feature-icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #F4F4FD;
-    border-radius: 4px;
-    width: 264px;
-    height: 112px;
-    margin-bottom: 8px;
+    display: none;
 }
+
+ @media only screen and (min-width: 1158) {
+    .feature-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F4F4FD;
+        border-radius: 4px;
+        width: 264px;
+        height: 112px;
+        margin-bottom: 8px;
+        }
+}
+
 
 /**
   |============================
