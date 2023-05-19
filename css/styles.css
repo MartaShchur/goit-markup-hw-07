@@ -51,13 +51,27 @@ p{
 .location {
     display: flex;
     flex-wrap: wrap;
-    gap:72px 24px;
+    gap: 72px 0;
 }
+
+/* Tablet screen >= 768  */
+    @media only screen and (min-width: 768px) {
+        .location {
+            gap: 72px 24px;
+        }  
+}
+
+  /* Desktop screen >= 1158  */
+  @media only screen and (min-width: 1158px) {
+      .location {
+        gap: 0 24px;
+      }
+  }
 
 .container{
     /* Basic styles */
     min-width:320px;
-    max-width: 396px;
+    max-width: 428px;
     padding: 0 16px;
     margin: 0 auto;
 }
