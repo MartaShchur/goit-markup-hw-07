@@ -51,22 +51,8 @@ p{
 .location {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px 0;
+    gap: 72px 24px;
 }
-
-/* Tablet screen >= 768  */
-    @media only screen and (min-width: 768px) {
-        .location {
-            gap: 72px 24px;
-        }  
-}
-
-  /* Desktop screen >= 1158  */
-  @media only screen and (min-width: 1158px) {
-      .location {
-        gap: 0 24px;
-      }
-  }
 
 .container{
     /* Basic styles */
@@ -304,14 +290,12 @@ p{
     }
 }
 
-
-
 .features-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     color: var(--main-text-color);
-    margin-bottom: 8px;
+    margin-bottom: 8px;   
 }
 
 @media only screen and (min-width: 1158) {
@@ -319,16 +303,16 @@ p{
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
-    }
-    
+    }   
 }
 
 .features-text{
     font-weight: 500;
-        font-size: 16px;
-        line-height: 0.6;
-        color: var(--main-text-color);
-        margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 0.6;
+    color: var(--main-text-color);
+    margin-bottom: 8px;
+    letter-spacing: 0.02em;
 }
 
 @media only screen and (min-width: 1158) {
@@ -338,12 +322,19 @@ p{
     }
 }
 
-.feature-icon{
-    display: none;
+/* .featire-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F4F4FD;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
 }
 
- @media only screen and (min-width: 1158) {
-    .feature-icon{
+@media only screen and (min-width: 1158) {
+    .feature-icon {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -352,8 +343,27 @@ p{
         width: 264px;
         height: 112px;
         margin-bottom: 8px;
-        }
+    }
+} */
+
+
+@media only screen and (max-width: 768){
+    .feature-icon{
+        display: none;
+    }
 }
+
+.feature-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F4F4FD;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+}
+
 
 
 /**
