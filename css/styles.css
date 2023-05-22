@@ -422,6 +422,12 @@ p{
         height: 112px;
         margin-bottom: 8px;
     }
+    .features-icon{
+        background-color: #2E2F42;
+        height:112px;
+        
+
+    }
 }
 
 /**
@@ -951,17 +957,17 @@ p{
   | Mobile menu
   |============================
 */
+
 .menu-toggle {
-    min-height: 22px;
-    min-width: 32px;
+    min-height: 32px;
+    min-width: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin: 0;
     margin-left: auto;
     padding: 0;
-    background-color: transparent;
+    background-color: #2E2F42;
     cursor: pointer;
     border: none;
     border-radius: 50%;
@@ -983,17 +989,14 @@ p{
     position: fixed;
     top: 0;
     left: 0;
-
     display: flex;
     flex-direction: column;
-
     width: 100vw;
     height: 100vh;
-    padding: 40px;
-    padding-top: 80px;
+    padding-top: 32px;
+    padding: 16px;
     background-color: #fff;
     z-index: 999;
-
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 }
@@ -1006,29 +1009,14 @@ p{
     position: absolute;
     top: 16px;
     right: 16px;
-}
-
-.mobile-menu {
-    margin-bottom: auto;
+    
 }
 
 .mobile-menu .link {
     display: block;
     padding: 10px;
-}
-
-.mobile-contacts {
-    margin-bottom: 48px;
-}
-
-.mobile-socials {
-    justify-content: flex-start;
-    gap: 54px;
-}
-
-.mobile-socials .socials-link {
-    background-color: #2E2F42;
-    color:#2E2F42;
+    color: #fff;
+    text-decoration: none;
 }
 
 

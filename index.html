@@ -38,13 +38,15 @@
             >Web<span class="studio-logo">Studio</span>
           </a>
 
+          <!-- Burger mobile -->
+
           <button
             class="menu-toggle js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
             <svg width="32" height="22">
-              <use href="./images/icons.svg#icon-vector-mobil"></use>
+              <use href="./images/icons.svg#burger-menu"></use>
             </svg>
           </button>
 
@@ -140,7 +142,7 @@
       </section>
 
       <!-- Doing section 3-->
-      <section class="section-doing">
+      <!-- <section class="section-doing">
         <div class="container">
           <h2 class="work-title">What are we doing</h2>
           <ul class="location list">
@@ -155,10 +157,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Team section 4-->
-      <section class="team-nav">
+      <!-- <section class="team-nav">
         <div class="container">
           <h2 class="work-title">Our Team</h2>
           <ul class="location list">
@@ -315,11 +317,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Customers section 5-->
 
-      <section class="customers-section">
+      <!-- <section class="customers-section">
         <div class="container">
           <h2 class="work-title">Customers</h2>
           <ul class="customers-logo list">
@@ -367,11 +369,11 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!-- Footer section-->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-page">
         <div class="footer-content">
           <a class="footer-logo link" href="./index.html">
@@ -414,11 +416,11 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
         <!-- Footer section Forms-->
 
-        <div class="subscribe-wrapper">
+        <!-- <div class="subscribe-wrapper">
           <p class="subscribe-text">Subscribe</p>
           <form class="footer-form form" name="footer-form">
             <label class="subscribe-form-wrapper">
@@ -432,20 +434,50 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal Page-->
-    <div data-modal class="modal-container is-hidden">
+    <!-- <div data-modal class="modal-container is-hidden">
       <div class="modal-page">
         <button class="btn-modal-page" data-modal-close type="button">
           <svg width="8" height="8" class="modal">
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>
-        </button>
+        </button> -->
+
+
+        <!-- MOBILE MENU  -->
+
+
+         <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
+
 
         <!-- Modal Page Forms-->
 
-        <p class="modal-title">Leave your contacts and we will call you back </p>
+        <!-- <p class="modal-title">Leave your contacts and we will call you back </p>
         <form class="modal-form form" name="modal-form">
           <label class="form-label" for="modal-name">Name</label>
           <div class="form-wrapper">
@@ -491,8 +523,16 @@
           <button class="form-btn btn" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
+    <!-- Mobile menu scripts -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
