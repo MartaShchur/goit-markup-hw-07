@@ -144,7 +144,13 @@ p{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:var(--logo-color);
-    margin-right: 76px;
+    margin-right: 120px;
+}
+
+@media only screen and (min-width: 1158px) {
+    .header-logo {
+        margin-right: 76px;
+    }
 }
 
 .studio-logo{
@@ -227,8 +233,16 @@ p{
 }
 
 .contacts{
+    display: block;
+    margin-bottom: 12px;
+      
+}
+
+@media only screen and (min-width: 1158px) {
+    .contacts {
     display: flex;
     gap: 40px;
+    }
 }
 
 .contact-item{
@@ -280,9 +294,6 @@ p{
         height: 600px;
     }
 }
-
-
-
 
 .hero-title{
     font-size: 56px;
@@ -527,22 +538,34 @@ p{
   | Customers section
   |============================
 */
-
-.customers-section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+.customers-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
+
+@media only screen and (min-width: 1158px) {
+    .customers-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
 
 .customers-logo{
-    display: flex;
-    gap: 24px;
+   
 }
+
+ /* display: flex;
+    gap: 24px; */
+
 
 .customers-item{
-    width: calc((100% - 120px) / 6);
-    height: 88px; 
+   
 
 }
+
+ /* width: calc((100% - 120px) / 6);
+    height: 88px;  */
 
 .customers-link{
     width: 100%;
@@ -1014,13 +1037,14 @@ p{
 
 .mobile-menu {
     margin-bottom: auto;
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
 }
 
 .mobile-menu .link  {
-    display: block;
-    padding: 10px;
-
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
@@ -1029,16 +1053,6 @@ p{
     color: #2E2F42;
     margin-bottom: auto;
 }
-
-/* .menu-item-mobil {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2E2F42;
-    
-} */
 
 .active-menu .mobile-menu{
     color: #404BBF;
@@ -1049,17 +1063,37 @@ p{
     margin-bottom: 48px;
 }
 
-/* .mobile-socials {
+.mobile-socials {
     justify-content: flex-start;
     gap: 54px;
+    width: 328px;
 }
 
-.mobile-socials .socials-link {
-    background-color: #ff6c00;
-    color: #fff;
-} */ */
+.menu-item-mobil.active {
+    color: #404bbf;
+}
 
+.contact-phone{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #4D5AE5;
+    width: 353px;
+    height: 40px;
+    display: block;
+    margin-bottom: 40px;
+}
 
+.contact-input{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2px;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+  
 /**
   |============================
   |  PORTFOLIO
