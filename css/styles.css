@@ -630,10 +630,8 @@ p{
   |============================
 */
 
-@media only screen and (max-width: 767px) {
-    .footer-page {
-        text-align: center;
-    }
+.footer-page {
+    text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -652,35 +650,30 @@ p{
     }
 }
 
-
 .footer-content {
-    align-items: center;
     padding-bottom: 72px;
-    }
-
+}
 
 @media only screen and (min-width: 1158px) {
     .footer-content {
         margin-right: 120px;
+    }
 }
-}
-
-
 
 .footer{
     background-color: var(--dark-bg-color);
     padding-top: 96px;
     padding-bottom: 96px;
-    
+    margin-left: auto;
+    margin-right: auto;   
 }
 
 @media only screen and (min-width: 1158px) {
     .footer {
-        background-color: var(--dark-bg-color);
         padding: 100px 0 100px;
         display: flex;
         justify-content: space-between;
-        }
+    }
 }
 
 .link{
@@ -716,6 +709,7 @@ p{
  .text-footer {
     width: 268px;
     gap: 72px;
+   
  }
 }
 
@@ -786,9 +780,7 @@ p{
         }
 }
 
-.subscribe-wrapper{
-  margin-left: auto;
-}
+
 
 .subscribe-text{
     font-weight: 500;
