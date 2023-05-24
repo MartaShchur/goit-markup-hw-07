@@ -637,7 +637,6 @@ p{
 @media only screen and (min-width: 768px) {
     .footer-page {
         display: flex;
-        flex-wrap: wrap;
         gap: 24px;
         align-items: baseline;
     }
@@ -646,12 +645,11 @@ p{
 @media only screen and (min-width: 1158px) {
     .footer-page {
         display: flex;
-        align-items: baseline;
     }
 }
 
 .footer-content {
-    padding-bottom: 72px;
+    margin: 0 66px 72px;
 }
 
 @media only screen and (min-width: 1158px) {
@@ -664,8 +662,8 @@ p{
     background-color: var(--dark-bg-color);
     padding-top: 96px;
     padding-bottom: 96px;
-    margin-left: auto;
-    margin-right: auto;   
+    /* margin-left: auto;
+    margin-right: auto;    */
 }
 
 @media only screen and (min-width: 1158px) {
@@ -697,12 +695,10 @@ p{
 }
 
 .footer-text{
-    font-family:var(--primary-font);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-text-color);
-    max-width: 264px;
 }
 
 @media screen and (max-width: 767px){
@@ -733,6 +729,15 @@ p{
 .social-logo{
     display: flex;
     gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+ @media screen and (min-width: 1158px) {
+    .social-logo {
+    display: flex;
+    gap: 16px;
+}
 }
 
 .social-item{
@@ -763,13 +768,24 @@ p{
     fill: var(--footer-text-color);
 }
 
+.social-media-nav {
+    margin: 0 96px 72px;
+    width: 208px;
+    height: 80px;
+}
+
+
 /* Subscribe */
 
+.subscribe-wrapper{
+  display: flex;
+  flex-direction: column;
+}
 
 @media screen and (min-width: 768px){
  .subscribe-wrapper {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
     gap: 24px;
 }
 }
@@ -780,16 +796,22 @@ p{
         }
 }
 
-
-
 .subscribe-text{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--light-text-color);
-    margin-bottom: 16px;
+    margin-bottom: 16px;  
 }
+
+@media screen and (max-width: 768px) {
+    .subscribe-text {
+        text-align: center;
+    }
+}
+
+
 
 .footer-form{
     display: flex;
@@ -810,6 +832,15 @@ p{
     color: var(--light-text-color);
 }
 
+@media screen and (max-width: 767px) {
+    .subscribe-form-input {
+        margin: 0 0 16px;
+        padding: 8px 16px;
+        width: 396px;
+        height: 40px;
+    }
+}
+
 .subscribe-form-input::placeholder{
     font-weight: 400;
     font-size: 12px;
@@ -823,27 +854,34 @@ p{
     padding-top: 8px; 
 }
 
-.subscribe-form-btn{
+.subscribe-form-btn {
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--light-text-color);
-    display: flex;
     align-items: center;
     padding: 8px 24px;
     gap: 16px;
-    background-color:var(--logo-color);
+    background-color: var(--logo-color);
     border-radius: 4px;
     color: var(--light-text-color);
     fill: #ffffff;
     border: none;
     border-color: transparent;
 }
+
+@media only screen and (max-width: 767) {
+    .subscribe-form-btn{
+      margin: 0;
+    }   
+}
+
+
+
 
 .subscribe-form-btn .btn-text:hover,
 .subscribe-form-btn .btn-text:focus{
