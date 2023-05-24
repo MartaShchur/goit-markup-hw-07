@@ -58,7 +58,6 @@ p{
 @media only screen and (min-width: 768px) {
     .location{
         gap: 72px 24px;
-
   }
 }
 
@@ -68,7 +67,6 @@ p{
         flex-wrap: nowrap;  
     }
 } 
-
 
 .container{
     /* Basic styles */
@@ -143,8 +141,7 @@ p{
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color:var(--logo-color);
-    margin-right: 120px;
+    color:var(--logo-color); 
 }
 
 @media only screen and (min-width: 1158px) {
@@ -662,8 +659,6 @@ p{
     background-color: var(--dark-bg-color);
     padding-top: 96px;
     padding-bottom: 96px;
-    /* margin-left: auto;
-    margin-right: auto;    */
 }
 
 @media only screen and (min-width: 1158px) {
@@ -687,14 +682,15 @@ p{
     text-transform: uppercase;
     color: var(--logo-color);
     display: block;
+    text-align: center;
     margin-bottom: 16px;
 
 }
 
 @media only screen and (min-width: 1158px) {
     .footer-logo {
-        /* display: inline-block; */
-            /* margin-bottom: 16px; */
+        display: inline-block; 
+        margin-bottom: 16px;
     }
 }
 
@@ -707,7 +703,9 @@ p{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-text-color);
-    width: 268px;
+    width: 264px;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 @media screen and (min-width: 768px){
@@ -725,6 +723,7 @@ p{
     letter-spacing: 0.02em;
     color: var(--light-text-color);
     margin-bottom: 16px; 
+    text-align: center;
 }
 
 .social-logo{
@@ -742,8 +741,7 @@ p{
 }
 
 .social-item{
-    width: 40px;
-    height: 40px;
+  
 }
 
 .social-media-link{
@@ -756,6 +754,8 @@ p{
     justify-content: center;
     transition: background-color 250ms 
     cubic-bezier(0.4, 0, 0.2, 1);
+    width:40px;
+    height:40px;
 }
 
 .social-media-link:hover{
@@ -770,9 +770,7 @@ p{
 }
 
 .social-media-nav {
-    margin: 0 96px 72px;
-    width: 208px;
-    height: 80px;
+    margin-bottom:72px;
 }
 
 
@@ -812,14 +810,15 @@ p{
     }
 }
 
-
-
 .footer-form{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    gap: 24px;
+    gap: 16px;
 }
+
+ /* gap: 24px; */
+
 
 .subscribe-form-input{
     width: 264px;
@@ -836,7 +835,6 @@ p{
 
 @media screen and (max-width: 767px) {
     .subscribe-form-input {
-        margin: 0 0 16px;
         padding: 8px 16px;
         width: 396px;
         height: 40px;
@@ -877,16 +875,6 @@ p{
     margin-left: auto;
     margin-right: auto;
 }
-
-/* @media only screen and (max-width: 767) {
-    .subscribe-form-btn{
-        margin-left: auto;
-        margin-right: auto;
-    }   
-} */
-
-
-
 
 .subscribe-form-btn .btn-text:hover,
 .subscribe-form-btn .btn-text:focus{
@@ -1194,7 +1182,6 @@ p{
 .mobile-socials {
     justify-content: flex-start;
     gap: 54px;
-    width: 328px;
 }
 
 .menu-item-mobil.active {
@@ -1208,8 +1195,6 @@ p{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #4D5AE5;
-    width: 353px;
-    height: 40px;
     display: block;
     margin-bottom: 40px;
 }
