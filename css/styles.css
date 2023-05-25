@@ -31,6 +31,10 @@ body {
 img{
     display: block;
     max-width: 100%;
+    height: auto;
+
+    object-fit: cover;
+    object-position: center;
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -271,33 +275,37 @@ p{
   |============================
 */
 .hero-page{
+    background-color: var(--dark-bg-color);
     height: 432px;
-    background: rgba(46, 47, 66, 0.7);
+    text-align: center;
+        /* fons */
+    max-width: 1440px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)),
+     url(../images/mobile/_mob@1x.png);
 }
 
 
 @media only screen and (min-width: 768px) {
     .hero-page{
-        height: 436px;
+        height: 436px; 
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(..//images/tablet/_tab@1x.png);
     }
 }
 
 @media only screen and (min-width: 1158px) {
     .hero-page{
-    /* background-color:var(--dark-bg-color); */
         padding: 188px 0 188px;
-        text-align: center;
-        /* fons */
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/img-name.jpg);
-        max-width: 1440px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         height: 600px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
+        }
     }
-}
+
 
 .hero-title{
     font-size: 56px;
@@ -418,8 +426,6 @@ p{
     }
 }
 
-
-
 @media only screen and (max-width: 1157px) {
     .feature-icon {
         display: none;
@@ -440,8 +446,6 @@ p{
     .features-icon{
         background-color: #2E2F42;
         height:112px;
-        
-
     }
 }
 
@@ -463,6 +467,12 @@ p{
 .section-doing{
     padding-top:0;
     padding-bottom:120px;
+}
+
+@media only screen and (max-width: 1157px) {
+    .section-doing {
+        display: none;
+    }
 }
 
 .location-work{
