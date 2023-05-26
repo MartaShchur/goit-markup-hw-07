@@ -337,13 +337,13 @@ screen and (min-resolution: 2dppx) {
     line-height: 1.1;
     text-align: center;
     color:var(--light-text-color);
-    margin: 0 38px 72px;
-   
-    
+    margin: 0 38px 72px;   
 }
 
 @media only screen and (min-width: 768px) {
     .hero-title {
+        font-weight: 700;
+        line-height: 1.07;
         font-size: 56px;
         margin: 0  121px 36px;
         
@@ -352,6 +352,8 @@ screen and (min-resolution: 2dppx) {
 
 @media only screen and (min-width: 1158px) {
     .hero-title {
+        font-weight: 700;
+        line-height: 1.07;
         font-size: 56px;
         max-width: 496px;
         margin: 0 316px 48px;
@@ -441,16 +443,13 @@ screen and (min-resolution: 2dppx) {
     }
 }
 
-
 .features-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color: var(--secondary-text-color);
     margin: auto;
-
 }
-
 
 @media only screen and (min-width: 768px) {
     .features-text {
@@ -467,6 +466,11 @@ screen and (min-resolution: 2dppx) {
     }
 }
 
+.feature-icon {
+    background-color: #2E2F42;
+    /* height: 112px; */
+}
+
 @media only screen and (max-width: 1157px) {
     .feature-icon {
         display: none;
@@ -474,7 +478,7 @@ screen and (min-resolution: 2dppx) {
 }
 
 @media only screen and (min-width: 1158px) {
-    .features-icon {
+    .feature-icon {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -483,10 +487,6 @@ screen and (min-resolution: 2dppx) {
         width: 264px;
         height: 112px;
         margin-bottom: 8px;
-    }
-    .features-icon{
-        background-color: #2E2F42;
-        height:112px;
     }
 }
 
@@ -547,6 +547,17 @@ screen and (min-resolution: 2dppx) {
     justify-content: center;
     gap: 72px;
 }
+} 
+
+@media screen and (max-width: 1157px) {
+    .location {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        column-gap: 24px;
+    }
 }
 
 .team-card{
@@ -566,6 +577,23 @@ screen and (min-resolution: 2dppx) {
 .card-content{
     padding-top: 32px;
     padding-bottom: 32px; 
+}
+
+.team-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--main-text-color);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.team-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--secondary-text-color);
+    margin-bottom: 8px;
 }
 
 /* Social Media */
