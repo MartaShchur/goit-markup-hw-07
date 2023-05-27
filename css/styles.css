@@ -320,12 +320,6 @@ ul{
   }
 }
 
-/* @media only screen and (min-width: 768px) {
-    .hero-page {
-        padding: 112px 0;
-    }
-} */
-
 @media only screen and (min-width: 768px) {
     .hero-page{
         height: 436px; 
@@ -373,7 +367,7 @@ screen and (min-resolution: 2dppx) {
     line-height: 1.1;
     text-align: center;
     color:var(--light-text-color);
-    margin: 0 38px 72px;   
+    margin: 0 72px;   
 }
 
 @media only screen and (min-width: 768px) {
@@ -684,6 +678,7 @@ screen and (min-resolution: 2dppx) {
     padding-bottom: 96px;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 }
 
 @media only screen and (min-width: 1158px) {
@@ -723,13 +718,14 @@ screen and (min-resolution: 2dppx) {
 }
 
 .customers-item{
-   width: 190px;
+   width:calc((100% - 16px) / 2);
    height: 88px;
 }
 
+
 @media only screen and (min-width: 768px) {
     .customers-item {
-        width: 168px;
+        width: calc((100% - 48px) / 3);
     }
 }
 
@@ -972,7 +968,7 @@ screen and (min-resolution: 2dppx) {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--light-text-color);
-    margin bottom: 16px px;  
+    margin bottom: 16px;  
 }
 
 @media screen and (max-width: 767px) {
@@ -993,7 +989,7 @@ screen and (min-resolution: 2dppx) {
 .footer-form{
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    align-items: center;
     gap: 16px;
 }
 
@@ -1002,6 +998,13 @@ screen and (min-resolution: 2dppx) {
         gap:24px;    
     }
 }
+
+@media screen and (max-width: 767px) {
+    .subscribe-form-wrapper {
+        width: 100%;
+}
+}
+
 
 .subscribe-form-input{
     width: 100%;
@@ -1018,9 +1021,7 @@ screen and (min-resolution: 2dppx) {
 
 @media screen and (max-width: 767px) {
     .subscribe-form-input {
-        margin-top: 16px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-top: 16px;  
     }
 }
 
@@ -1056,6 +1057,15 @@ screen and (min-resolution: 2dppx) {
     border: none;
     border-color: transparent;
 }
+
+@media screen and (max-width: 767px) {
+    .subscribe-form-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
 
 .subscribe-form-btn .btn-text:hover,
 .subscribe-form-btn .btn-text:focus{
